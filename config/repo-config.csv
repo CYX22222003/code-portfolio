@@ -1,2 +1,8 @@
 Repository's Location,Branch,File formats,Find Previous Authors,Ignore Glob List,Ignore standalone config,Ignore Commits List,Ignore Authors List,Shallow Cloning,File Size Limit,Ignore File Size Limit,Skip Ignored File Analysis
-https://github.com/reposense/RepoSense.git,master,,,,,,,,,,
+https://github.com/Golddirio/HacknRoll2025.git,main,,,,,,,,,,
+https://github.com/CYX22222003/ProjectKorolev.git,main,,,*.pyc;app_flask/.pylintrc;package.json,,,,,,,
+https://github.com/CYX22222003/RepoSense.git,master,,,,,,,,,,
+https://github.com/CYX22222003/codecrafters-interpreter-python.git,master,,,,,,,,,,
+https://github.com/source-academy/frontend.git,master,,,,,,,,,,
+https://github.com/CYX22222003/ip.git,master,,,,,,,,,,
+https://github.com/CYX22222003/tp.git,master,,,,,,,,,,
