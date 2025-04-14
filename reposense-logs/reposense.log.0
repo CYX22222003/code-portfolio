@@ -1,25 +1,25 @@
-Apr 14, 2025 6:09:15 AM reposense.system.LogsManager addFileHandler
+Apr 14, 2025 7:28:31 AM reposense.system.LogsManager addFileHandler
 INFO: Log temp folder has been successfully created
-Apr 14, 2025 6:09:15 AM reposense.parser.ArgsParser parse
+Apr 14, 2025 7:28:31 AM reposense.parser.ArgsParser parse
 INFO: Config path not provided, using the config folder as default.
-Apr 14, 2025 6:09:15 AM reposense.parser.ReportConfigYamlParser parse
+Apr 14, 2025 7:28:31 AM reposense.parser.ReportConfigYamlParser parse
 INFO: Parsing report-config.yaml file...
-Apr 14, 2025 6:09:15 AM reposense.parser.ArgsParser addReportConfigToBuilder
+Apr 14, 2025 7:28:31 AM reposense.parser.ArgsParser addReportConfigToBuilder
 WARNING: Error parsing report-config.yaml: /home/runner/work/code-portfolio/code-portfolio/config/report-config.yaml (No such file or directory)
 /home/runner/work/code-portfolio/code-portfolio/config/report-config.yaml Ignoring the report config provided.
-Apr 14, 2025 6:09:15 AM reposense.parser.BlurbMarkdownParser parse
+Apr 14, 2025 7:28:31 AM reposense.parser.BlurbMarkdownParser parse
 INFO: Parsing blurbs...
-Apr 14, 2025 6:09:15 AM reposense.parser.BlurbMarkdownParser parse
+Apr 14, 2025 7:28:31 AM reposense.parser.BlurbMarkdownParser parse
 INFO: Blurbs parsed successfully!
-Apr 14, 2025 6:09:15 AM reposense.parser.CsvParser validateHeader
+Apr 14, 2025 7:28:31 AM reposense.parser.CsvParser validateHeader
 INFO: Parsed header of CSV file, repo-config.csv, and recognized columns: Ignore Standalone Config,  Repository's Location,  Branch,  Shallow Cloning,  File formats,  Ignore Glob List,  Ignore Authors List,  Find Previous Authors,  Since Date,  Ignore Commits List,  Until Date
-Apr 14, 2025 6:09:15 AM reposense.parser.RepoConfigCsvParser matchValueAndKeyword
+Apr 14, 2025 7:28:31 AM reposense.parser.RepoConfigCsvParser matchValueAndKeyword
 WARNING: Ignoring unknown value *.pyc;app_flask/.pylintrc;package.json in yes column.
-Apr 14, 2025 6:09:15 AM reposense.parser.CsvParser validateHeader
+Apr 14, 2025 7:28:31 AM reposense.parser.CsvParser validateHeader
 INFO: Parsed header of CSV file, author-config.csv, and recognized columns: Author's Emails,  Repository's Location,  Branch,  Author's Git Host ID,  Author's Display Name,  Ignore Glob List,  Author's Git Author Name
-Apr 14, 2025 6:09:15 AM reposense.model.AuthorConfiguration addAuthors
+Apr 14, 2025 7:28:31 AM reposense.model.AuthorConfiguration addAuthors
 WARNING: Skipping author as CYX22222003 already in repository https://github.com/CYX22222003/RepoSense.git master
-Apr 14, 2025 6:09:15 AM reposense.git.GitConfig getGlobalGitLfsConfig
+Apr 14, 2025 7:28:31 AM reposense.git.GitConfig getGlobalGitLfsConfig
 WARNING: Could not get global git lfs config
 java.lang.RuntimeException: reposense.system.CommandRunnerProcessException: Error returned from command git config --global --list on path . :
 fatal: unable to read config file '/home/runner/.gitconfig': No such file or directory
@@ -35,117 +35,117 @@ fatal: unable to read config file '/home/runner/.gitconfig': No such file or dir
 	at reposense.system.CommandRunner.runCommand(CommandRunner.java:21)
 	... 3 more
 
-Apr 14, 2025 6:09:15 AM reposense.report.RepoCloner spawnCloneProcess
+Apr 14, 2025 7:28:31 AM reposense.report.RepoCloner spawnCloneProcess
 INFO: Cloning in parallel from https://github.com/CYX22222003/ProjectKorolev.git...
-Apr 14, 2025 6:09:15 AM reposense.report.RepoCloner spawnCloneProcess
-INFO: Cloning in parallel from https://github.com/source-academy/frontend.git...
-Apr 14, 2025 6:09:15 AM reposense.report.RepoCloner spawnCloneProcess
-INFO: Cloning in parallel from https://github.com/CYX22222003/codecrafters-interpreter-python.git...
-Apr 14, 2025 6:09:15 AM reposense.report.RepoCloner spawnCloneProcess
+Apr 14, 2025 7:28:31 AM reposense.report.RepoCloner spawnCloneProcess
 INFO: Cloning in parallel from https://github.com/CYX22222003/ip.git...
-Apr 14, 2025 6:09:15 AM reposense.report.RepoCloner waitForCloneProcess
-INFO: Waiting for cloning of https://github.com/source-academy/frontend.git to complete...
-Apr 14, 2025 6:09:15 AM reposense.report.RepoCloner waitForCloneProcess
-INFO: Waiting for cloning of https://github.com/CYX22222003/codecrafters-interpreter-python.git to complete...
-Apr 14, 2025 6:09:15 AM reposense.report.RepoCloner waitForCloneProcess
-INFO: Waiting for cloning of https://github.com/CYX22222003/ip.git to complete...
-Apr 14, 2025 6:09:15 AM reposense.report.RepoCloner waitForCloneProcess
+Apr 14, 2025 7:28:31 AM reposense.report.RepoCloner spawnCloneProcess
+INFO: Cloning in parallel from https://github.com/source-academy/frontend.git...
+Apr 14, 2025 7:28:31 AM reposense.report.RepoCloner spawnCloneProcess
+INFO: Cloning in parallel from https://github.com/CYX22222003/codecrafters-interpreter-python.git...
+Apr 14, 2025 7:28:31 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Waiting for cloning of https://github.com/CYX22222003/ProjectKorolev.git to complete...
-Apr 14, 2025 6:09:16 AM reposense.report.RepoCloner waitForCloneProcess
+Apr 14, 2025 7:28:31 AM reposense.report.RepoCloner waitForCloneProcess
+INFO: Waiting for cloning of https://github.com/CYX22222003/codecrafters-interpreter-python.git to complete...
+Apr 14, 2025 7:28:31 AM reposense.report.RepoCloner waitForCloneProcess
+INFO: Waiting for cloning of https://github.com/CYX22222003/ip.git to complete...
+Apr 14, 2025 7:28:31 AM reposense.report.RepoCloner waitForCloneProcess
+INFO: Waiting for cloning of https://github.com/source-academy/frontend.git to complete...
+Apr 14, 2025 7:28:32 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Cloning of https://github.com/CYX22222003/codecrafters-interpreter-python.git completed!
-Apr 14, 2025 6:09:16 AM reposense.report.RepoCloner spawnCloneProcess
+Apr 14, 2025 7:28:32 AM reposense.report.RepoCloner spawnCloneProcess
 INFO: Cloning in parallel from https://github.com/CYX22222003/RepoSense.git...
-Apr 14, 2025 6:09:16 AM reposense.report.RepoCloner waitForCloneProcess
+Apr 14, 2025 7:28:32 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Waiting for cloning of https://github.com/CYX22222003/RepoSense.git to complete...
-Apr 14, 2025 6:09:16 AM reposense.report.ReportGenerator analyzeRepos
+Apr 14, 2025 7:28:32 AM reposense.report.ReportGenerator analyzeRepos
 INFO: [1/6] Analyzing https://github.com/CYX22222003/codecrafters-interpreter-python.git (master)...
-Apr 14, 2025 6:09:16 AM reposense.report.ReportGenerator updateRepoConfig
+Apr 14, 2025 7:28:32 AM reposense.report.ReportGenerator updateRepoConfig
 INFO: https://github.com/CYX22222003/codecrafters-interpreter-python.git (master) does not contain a standalone config file.
-Apr 14, 2025 6:09:16 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
+Apr 14, 2025 7:28:32 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
 INFO: Extracting relevant file info from https://github.com/CYX22222003/codecrafters-interpreter-python.git (master)...
-Apr 14, 2025 6:09:16 AM reposense.report.RepoCloner waitForCloneProcess
+Apr 14, 2025 7:28:32 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Cloning of https://github.com/CYX22222003/ip.git completed!
-Apr 14, 2025 6:09:16 AM reposense.report.ReportGenerator analyzeRepos
+Apr 14, 2025 7:28:32 AM reposense.report.ReportGenerator analyzeRepos
 INFO: [2/6] Analyzing https://github.com/CYX22222003/ip.git (master)...
-Apr 14, 2025 6:09:16 AM reposense.report.RepoCloner spawnCloneProcess
+Apr 14, 2025 7:28:32 AM reposense.report.RepoCloner spawnCloneProcess
 INFO: Cloning in parallel from https://github.com/CYX22222003/tp.git...
-Apr 14, 2025 6:09:16 AM reposense.report.RepoCloner waitForCloneProcess
+Apr 14, 2025 7:28:32 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Waiting for cloning of https://github.com/CYX22222003/tp.git to complete...
-Apr 14, 2025 6:09:16 AM reposense.report.ReportGenerator updateRepoConfig
+Apr 14, 2025 7:28:32 AM reposense.report.ReportGenerator updateRepoConfig
 INFO: https://github.com/CYX22222003/ip.git (master) does not contain a standalone config file.
-Apr 14, 2025 6:09:16 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
+Apr 14, 2025 7:28:32 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
 INFO: Extracting relevant file info from https://github.com/CYX22222003/ip.git (master)...
-Apr 14, 2025 6:09:16 AM reposense.commits.CommitInfoExtractor extractCommitInfos
+Apr 14, 2025 7:28:32 AM reposense.commits.CommitInfoExtractor extractCommitInfos
 INFO: Extracting commits info for https://github.com/CYX22222003/codecrafters-interpreter-python.git (master)...
-Apr 14, 2025 6:09:16 AM reposense.report.RepoCloner waitForCloneProcess
-INFO: Cloning of https://github.com/CYX22222003/ProjectKorolev.git completed!
-Apr 14, 2025 6:09:16 AM reposense.report.ReportGenerator analyzeRepos
-INFO: [3/6] Analyzing https://github.com/CYX22222003/ProjectKorolev.git (main)...
-Apr 14, 2025 6:09:16 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
+Apr 14, 2025 7:28:33 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
 INFO: Analyzing commits info for https://github.com/CYX22222003/codecrafters-interpreter-python.git (master)...
-Apr 14, 2025 6:09:16 AM reposense.report.ReportGenerator updateRepoConfig
+Apr 14, 2025 7:28:33 AM reposense.report.RepoCloner waitForCloneProcess
+INFO: Cloning of https://github.com/CYX22222003/ProjectKorolev.git completed!
+Apr 14, 2025 7:28:33 AM reposense.report.ReportGenerator analyzeRepos
+INFO: [3/6] Analyzing https://github.com/CYX22222003/ProjectKorolev.git (main)...
+Apr 14, 2025 7:28:33 AM reposense.report.ReportGenerator updateRepoConfig
 INFO: https://github.com/CYX22222003/ProjectKorolev.git (main) does not contain a standalone config file.
-Apr 14, 2025 6:09:16 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
+Apr 14, 2025 7:28:33 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
 INFO: Extracting relevant file info from https://github.com/CYX22222003/ProjectKorolev.git (main)...
-Apr 14, 2025 6:09:17 AM reposense.authorship.FileInfoExtractor generateFileInfo
+Apr 14, 2025 7:28:33 AM reposense.authorship.FileInfoExtractor generateFileInfo
 WARNING: File "app_react/package-lock.json" has 866617B size. The file size limit is set at 500000B. Exact line diffs will be excluded from report...
-Apr 14, 2025 6:09:17 AM reposense.report.ReportGenerator analyzeRepo
+Apr 14, 2025 7:28:33 AM reposense.report.ReportGenerator analyzeRepo
 INFO: Analysis of https://github.com/CYX22222003/codecrafters-interpreter-python.git (master) completed!
-Apr 14, 2025 6:09:17 AM reposense.commits.CommitInfoExtractor extractCommitInfos
+Apr 14, 2025 7:28:33 AM reposense.commits.CommitInfoExtractor extractCommitInfos
 INFO: Extracting commits info for https://github.com/CYX22222003/ip.git (master)...
-Apr 14, 2025 6:09:17 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
+Apr 14, 2025 7:28:33 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
 INFO: Analyzing commits info for https://github.com/CYX22222003/ip.git (master)...
-Apr 14, 2025 6:09:17 AM reposense.report.ReportGenerator analyzeRepo
+Apr 14, 2025 7:28:34 AM reposense.report.ReportGenerator analyzeRepo
 INFO: Analysis of https://github.com/CYX22222003/ip.git (master) completed!
-Apr 14, 2025 6:09:18 AM reposense.report.RepoCloner waitForCloneProcess
+Apr 14, 2025 7:28:34 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Cloning of https://github.com/CYX22222003/tp.git completed!
-Apr 14, 2025 6:09:18 AM reposense.report.ReportGenerator analyzeRepos
+Apr 14, 2025 7:28:34 AM reposense.report.ReportGenerator analyzeRepos
 INFO: [4/6] Analyzing https://github.com/CYX22222003/tp.git (master)...
-Apr 14, 2025 6:09:18 AM reposense.report.ReportGenerator updateRepoConfig
+Apr 14, 2025 7:28:34 AM reposense.report.ReportGenerator updateRepoConfig
 INFO: https://github.com/CYX22222003/tp.git (master) does not contain a standalone config file.
-Apr 14, 2025 6:09:18 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
+Apr 14, 2025 7:28:34 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
 INFO: Extracting relevant file info from https://github.com/CYX22222003/tp.git (master)...
-Apr 14, 2025 6:09:20 AM reposense.commits.CommitInfoExtractor extractCommitInfos
-INFO: Extracting commits info for https://github.com/CYX22222003/ProjectKorolev.git (main)...
-Apr 14, 2025 6:09:20 AM reposense.report.RepoCloner waitForCloneProcess
-INFO: Cloning of https://github.com/CYX22222003/RepoSense.git completed!
-Apr 14, 2025 6:09:20 AM reposense.report.ReportGenerator analyzeRepos
-INFO: [5/6] Analyzing https://github.com/CYX22222003/RepoSense.git (master)...
-Apr 14, 2025 6:09:21 AM reposense.report.RepoCloner waitForCloneProcess
+Apr 14, 2025 7:28:36 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Cloning of https://github.com/source-academy/frontend.git completed!
-Apr 14, 2025 6:09:21 AM reposense.report.ReportGenerator analyzeRepos
-INFO: [6/6] Analyzing https://github.com/source-academy/frontend.git (master)...
-Apr 14, 2025 6:09:21 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
-INFO: Analyzing commits info for https://github.com/CYX22222003/ProjectKorolev.git (main)...
-Apr 14, 2025 6:09:21 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
-INFO: Extracting relevant file info from https://github.com/CYX22222003/RepoSense.git (master)...
-Apr 14, 2025 6:09:21 AM reposense.report.ReportGenerator updateRepoConfig
+Apr 14, 2025 7:28:36 AM reposense.report.ReportGenerator analyzeRepos
+INFO: [5/6] Analyzing https://github.com/source-academy/frontend.git (master)...
+Apr 14, 2025 7:28:37 AM reposense.commits.CommitInfoExtractor extractCommitInfos
+INFO: Extracting commits info for https://github.com/CYX22222003/ProjectKorolev.git (main)...
+Apr 14, 2025 7:28:37 AM reposense.report.ReportGenerator updateRepoConfig
 INFO: https://github.com/source-academy/frontend.git (master) does not contain a standalone config file.
-Apr 14, 2025 6:09:21 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
+Apr 14, 2025 7:28:37 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
 INFO: Extracting relevant file info from https://github.com/source-academy/frontend.git (master)...
-Apr 14, 2025 6:09:21 AM reposense.report.ReportGenerator analyzeRepo
+Apr 14, 2025 7:28:37 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
+INFO: Analyzing commits info for https://github.com/CYX22222003/ProjectKorolev.git (main)...
+Apr 14, 2025 7:28:37 AM reposense.report.RepoCloner waitForCloneProcess
+INFO: Cloning of https://github.com/CYX22222003/RepoSense.git completed!
+Apr 14, 2025 7:28:37 AM reposense.report.ReportGenerator analyzeRepos
+INFO: [6/6] Analyzing https://github.com/CYX22222003/RepoSense.git (master)...
+Apr 14, 2025 7:28:37 AM reposense.report.ReportGenerator analyzeRepo
 INFO: Analysis of https://github.com/CYX22222003/ProjectKorolev.git (main) completed!
-Apr 14, 2025 6:09:21 AM reposense.authorship.FileInfoExtractor generateFileInfo
+Apr 14, 2025 7:28:37 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
+INFO: Extracting relevant file info from https://github.com/CYX22222003/RepoSense.git (master)...
+Apr 14, 2025 7:28:37 AM reposense.authorship.FileInfoExtractor generateFileInfo
 WARNING: File "yarn.lock" has 719179B size. The file size limit is set at 500000B. Exact line diffs will be excluded from report...
-Apr 14, 2025 6:09:23 AM reposense.commits.CommitInfoExtractor extractCommitInfos
-INFO: Extracting commits info for https://github.com/CYX22222003/RepoSense.git (master)...
-Apr 14, 2025 6:09:23 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
-INFO: Analyzing commits info for https://github.com/CYX22222003/RepoSense.git (master)...
-Apr 14, 2025 6:09:23 AM reposense.report.ReportGenerator analyzeRepo
-INFO: Analysis of https://github.com/CYX22222003/RepoSense.git (master) completed!
-Apr 14, 2025 6:09:23 AM reposense.commits.CommitInfoExtractor extractCommitInfos
+Apr 14, 2025 7:28:39 AM reposense.commits.CommitInfoExtractor extractCommitInfos
 INFO: Extracting commits info for https://github.com/CYX22222003/tp.git (master)...
-Apr 14, 2025 6:09:23 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
+Apr 14, 2025 7:28:39 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
 INFO: Analyzing commits info for https://github.com/CYX22222003/tp.git (master)...
-Apr 14, 2025 6:09:23 AM reposense.report.ReportGenerator analyzeRepo
+Apr 14, 2025 7:28:39 AM reposense.commits.CommitInfoExtractor extractCommitInfos
+INFO: Extracting commits info for https://github.com/CYX22222003/RepoSense.git (master)...
+Apr 14, 2025 7:28:39 AM reposense.report.ReportGenerator analyzeRepo
 INFO: Analysis of https://github.com/CYX22222003/tp.git (master) completed!
-Apr 14, 2025 6:09:37 AM reposense.commits.CommitInfoExtractor extractCommitInfos
+Apr 14, 2025 7:28:40 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
+INFO: Analyzing commits info for https://github.com/CYX22222003/RepoSense.git (master)...
+Apr 14, 2025 7:28:40 AM reposense.report.ReportGenerator analyzeRepo
+INFO: Analysis of https://github.com/CYX22222003/RepoSense.git (master) completed!
+Apr 14, 2025 7:28:53 AM reposense.commits.CommitInfoExtractor extractCommitInfos
 INFO: Extracting commits info for https://github.com/source-academy/frontend.git (master)...
-Apr 14, 2025 6:09:37 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
+Apr 14, 2025 7:28:53 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
 INFO: Analyzing commits info for https://github.com/source-academy/frontend.git (master)...
-Apr 14, 2025 6:09:37 AM reposense.report.ReportGenerator analyzeRepo
+Apr 14, 2025 7:28:53 AM reposense.report.ReportGenerator analyzeRepo
 INFO: Analysis of https://github.com/source-academy/frontend.git (master) completed!
-Apr 14, 2025 6:09:37 AM reposense.report.ReportGenerator generateReposReport
+Apr 14, 2025 7:28:53 AM reposense.report.ReportGenerator generateReposReport
 INFO: The report is generated at /home/runner/work/code-portfolio/code-portfolio/reposense-report
-Apr 14, 2025 6:09:37 AM reposense.RepoSense main
-INFO: Elapsed processing time: 22.79 second(s)
+Apr 14, 2025 7:28:53 AM reposense.RepoSense main
+INFO: Elapsed processing time: 22.26 second(s)
